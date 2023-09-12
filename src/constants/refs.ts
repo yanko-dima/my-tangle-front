@@ -1,19 +1,29 @@
-// The Refs
-export const NAV_REFS = {
-  DETANGLER_REF: '/the-ultimate-detangler',
-  ORIGINAL_REF: '/the-original',
-  ORIGINAL_MINI_REF: '/the-original-mini',
-  COMPACT_REF: '/compact-styler',
-  ESY_DRY__REF: '/easy-dry-go',
-  STYLER_REF: '/the-ultimate-styler',
-};
+import { INavLink } from '@/models/ILink';
 
-//The Models Labels
-export const NAV_LABELS = {
-  DETANGLER_NAME: 'The Ultimate Detangler',
-  ORIGINAL_NAME: 'The Origina',
-  ORIGINAL_MINI_NAME: 'The Origina Mini',
-  COMPACT_NAME: 'Compact styler',
-  ESY_DRY_NAME: 'Easy Dry & Go',
-  STYLER_NAME: 'The Ultimate Styler',
-};
+// The Refs
+export const NAV_REFS = [
+  {
+    label: 'The Ultimate Detangler',
+    href: '/the-ultimate-detangler',
+  },
+  {
+    label: 'The Origina',
+    href: '/the-original',
+  },
+  {
+    label: 'The Origina Mini',
+    href: '/the-original-mini',
+  },
+  {
+    label: 'Compact styler',
+    href: '/compact-styler',
+  },
+  {
+    label: 'Easy Dry & Go',
+    href: '/easy-dry-go',
+  },
+  {
+    label: 'The Ultimate Styler',
+    href: '/the-ultimate-styler',
+  },
+];
