@@ -3,17 +3,15 @@ import GoggleProvider from 'next-auth/providers/google';
 import Credentials from 'next-auth/providers/credentials';
 import { users } from '@/data/users';
 
-const clientId = process.env.GOOGLE_CLIENT_ID;
-const secret = process.env.GOOGLE_SECRET;
-
-console.log('clientId: ', clientId);
-console.log('secret:', secret);
+const clientId =
+  '246342813742-gk3imm9l8dk94jdnpm958nq1nbnd0ci4.apps.googleusercontent.com';
+const secret = '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';
 
 export const authConfig: AuthOptions = {
   providers: [
     GoggleProvider({
-      clientId: clientId!,
-      clientSecret: secret!,
+      clientId: clientId,
+      clientSecret: secret,
     }),
     Credentials({
       credentials: {
