@@ -1,0 +1,130 @@
+.categorySection {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.imageBlock {
+  margin-top: 20px;
+  width: 50%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.tangleImage {
+  height: 350px;
+
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.descriptionBlock {
+  margin-top: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 50%;
+}
+
+.descriptionBlockForStyling {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.tangleName {
+  margin-top: 3px;
+  margin-bottom: 8px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 38px;
+}
+
+.line {
+  height: 6px;
+  max-width: 300px;
+  background-color: rgba(238, 30, 144, 0.54);
+  margin-bottom: 10px;
+  margin-left: -60px;
+  position: relative;
+}
+
+.tangleDescription {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .tangleImage {
+    margin-left: -20%;
+  }
+
+  .tangleName {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .line {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .categorySection {
+    flex-direction: column;
+  }
+  .imageBlock {
+    left: auto;
+    right: auto;
+  }
+  .imageBlock {
+    width: 100%;
+  }
+  .tangleImage {
+    margin-left: 0%;
+  }
+
+  .descriptionBlock {
+    width: 100%;
+    left: auto;
+    right: auto;
+  }
+  .descriptionBlockForStyling {
+    padding-bottom: 5px;
+    padding-right: 20px;
+  }
+
+  .tangleName {
+    margin-top: 17px;
+    margin-left: 10px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .line {
+    height: 5px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .categorySection {
+    margin-bottom: 0;
+  }
+
+  .tangleImage {
+    margin-left: 0px;
+    min-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    background-size: cover;
+    height: 280px;
+  }
+
+  .tangleName {
+    margin-left: 10px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .line {
+    height: 4px;
+  }
+}
