@@ -14,11 +14,11 @@ export default async function Profile() {
         <li>User email: {session?.user?.email}</li>
         <li>
           {session?.user?.image && (
-            <Image
-              src={session.user.image}
-              alt="User avatar"
-              width="100"
-              height="100"
+            <img
+              src={session?.user?.image}
+              alt={`${session?.user?.name} avatar`}
+              width={100}
+              height={100}
             />
           )}
         </li>
